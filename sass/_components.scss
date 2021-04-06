@@ -1,0 +1,72 @@
+//////////////////
+/* .logo {
+  height: 3.25rem;
+}
+.search {
+  flex: 0 0 40%;
+  &_input {
+  }
+  &_icon {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  &_button {
+  }
+}
+.icon {
+  width: 2.2rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo {
+    height: 2.2rem;
+  }
+  .search {
+    position: relative;
+    &__icon {
+      height: 2rem;
+      width: 2rem;
+    }
+    &__button {
+      position: absolute;
+      border: none;
+      top: 0.8rem;
+      right: 10px;
+      background-color: white;
+    }
+    &__input {
+      padding: 1rem;
+      border-color: white;
+      border-radius: 4px;
+      outline: none;
+      transition: all 0.3s;
+      &:focus {
+        border-bottom: 2px solid green;
+        transform: scaleX(1.5);
+      }
+    }
+    &__input:focus ~ &__button {
+      background-color: yellowgreen;
+    }
+  }
+  .user-nav {
+    display: flex;
+    &__icon-box {
+      padding: 1rem;
+    }
+    &__icon {
+      height: 2.2rem;
+      width: 2.2rem;
+    }
+    &__logo {
+    }
+  }
+}
